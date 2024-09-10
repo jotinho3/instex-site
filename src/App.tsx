@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Logo from '../public/instex_logo-1-1.webp';
+import Logo from '/instex_logo-1-1.webp';
 
 export function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,7 +48,7 @@ export function App() {
       {/* Hero Section */}
       <motion.section
         className="relative bg-cover bg-center h-screen"
-        style={{ backgroundImage: 'url(../public/bg-instex.webp)' }}
+        style={{ backgroundImage: 'url(/bg-instex.webp)' }}
         initial="hidden"
         whileInView="visible"
         variants={sectionVariants}
@@ -80,7 +80,7 @@ export function App() {
           >
             <h3 className="text-xl font-bold">PEÇAS LISAS</h3>
             <p className="mt-2">Pronta entrega direto pra sua loja</p>
-            <img src="../public/camiseta_algodao_estampada_1.webp" alt="Description" className="w-full h-auto" />
+            <img src="/camiseta_algodao_estampada_1.webp" alt="Description" className="w-full h-auto" />
           </motion.div>
           <motion.div
             className="bg-white p-4 rounded shadow-lg mb-4 md:mb-0"
@@ -90,7 +90,7 @@ export function App() {
           >
             <h3 className="text-xl font-bold">PRODUZA MARCA</h3>
             <p className="mt-2">Sua etiqueta e estampa</p>
-            <img src="../public/camiseta_preta_algodao.webp" alt="Description" className="w-full h-auto" />
+            <img src="/camiseta_preta_algodao.webp" alt="Description" className="w-full h-auto" />
           </motion.div>
           <motion.div
             className="bg-white p-4 rounded shadow-lg mb-4 md:mb-0"
@@ -100,7 +100,7 @@ export function App() {
           >
             <h3 className="text-xl font-bold">MODELAGENS</h3>
             <p className="mt-2">Baixe modelagens para produzir</p>
-            <img src="../public/over_branca_frente_1.webp" alt="Description" className="w-full h-auto" />
+            <img src="/over_branca_frente_1.webp" alt="Description" className="w-full h-auto" />
           </motion.div>
         </div>
       </motion.section>
@@ -126,7 +126,7 @@ export function App() {
         transition={{ duration: 0.5 }}
       >
         <div className="md:w-1/2">
-          <img src="../public/ESTAMPA-TOQUE-ZERO.webp" alt="Description" className="w-full h-auto" />
+          <img src="./ESTAMPA-TOQUE-ZERO.webp" alt="Description" className="w-full h-auto" />
         </div>
         <div className="md:w-1/2 flex flex-col justify-center p-4">
           <h2 className="text-3xl font-bold">Crie Sua Marca de Roupas
@@ -213,7 +213,7 @@ export function App() {
         variants={sectionVariants}
         transition={{ duration: 0.5 }}
       >
-        <div className="text-lg font-bold">Logo</div>
+         <img className='w-20 m-auto' src={Logo} alt="Logo" />
         <div className="mt-4 flex justify-center space-x-4">
           <a href="mailto:example@example.com">Email</a>
           <a href="#contact">Contact</a>
