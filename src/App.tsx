@@ -56,13 +56,17 @@ export function App() {
         variants={sectionVariants}
         transition={{ duration: 0.5 }}
       >
-        <div className="absolute inset-0 flex flex-col gap-4 justify-center items-center text-white backdrop-blur-md">
+        <div className="absolute inset-0 flex flex-col gap-4 justify-center items-center text-white backdrop-blur-[1px]">
           <h1 className="sm:text-5xl text-2xl font-bold drop-shadow-2xl">Explore o Universo da Moda.</h1>
           <p className="sm:text-lg text-xs">Fabrique e aprenda com a INSTEX.
     Somos mais que uma fábrica.</p>
           <div className="mt-4 flex space-x-4">
         <a href="" className="bg-gray-900 hover:bg-gray-950 flex gap-2 items-center text-white font-bold py-2 px-6 rounded-full">Saiba Mais <FaInfoCircle /></a>
-        <button className="bg-red-600 flex gap-2 items-center hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full border-2">Produzir <IoIosCreate /></button>
+        <a target="_blank" href="https://web.whatsapp.com/send?phone=5581995195151&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20produ%C3%A7%C3%A3o%20de%20roupas" 
+           className="bg-red-600 flex gap-2 items-center hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full border-2">
+            Produzir 
+            <IoIosCreate />
+        </a>
           </div>
         </div>
       </motion.section>
